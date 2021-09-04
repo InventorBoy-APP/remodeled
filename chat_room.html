@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Chat Rooms</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" class="glyphicon glyphicon-log-out btn btn-warning" onclick="logout()">Logout</button>
+	<center>
+		<h1 class="header">	
+			LC Go!
+			<sup>
+				<img src="LC GO! (1).png">
+			</sup>
+		</h1>
+		<h3 class="color_white" id="welcomeuser"></h3>
+		
+			<label>Make A Room</label> 
+			<br>
+			<input type="text" id="roomname" class="form-control" placeholder="Roomname(RN) Here">
+		
+		
+		<span>
+			<button class="btn btn-success" onclick="addroom()">Create Room</button>
+			<label>👈🏻Be The King Or Queen Of That Room</label>
+		</span>
+		<h3 class="color_white">Big Rooms Where The Kids Are Going Off!</h3>
+		<div id="output">
+
+		</div>
+	
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>
